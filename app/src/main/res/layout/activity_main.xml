@@ -12,19 +12,24 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
+        style="@android:style/Widget.AutoCompleteTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ellipsize="middle"
         android:ems="10"
+        android:fontFamily="monospace"
         android:inputType="textPersonName"
         android:text="Показания эл.счетчика (прошлый месяц)"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
         android:id="@+id/electricyLastEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="кВт * ч"
         android:inputType="number"
+        android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
@@ -32,16 +37,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="monospace"
         android:inputType="textPersonName"
         android:text="Показания эл.счетчика (текущий месяц)"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
         android:id="@+id/electricyNowEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="кВт * ч"
         android:inputType="number"
+        android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
@@ -49,16 +57,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="monospace"
         android:inputType="textPersonName"
         android:text="Гор. вода (прошлый месяц)"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
         android:id="@+id/hotWaterLastEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="метры куб."
         android:inputType="number"
+        android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
@@ -66,16 +77,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="monospace"
         android:inputType="textPersonName"
         android:text="Гор. вода (текущий месяц)"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
         android:id="@+id/hotWaterNowEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="метры куб."
         android:inputType="number"
+        android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
@@ -83,16 +97,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="monospace"
         android:inputType="textPersonName"
         android:text="Хол. вода (прошлый месяц)"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
         android:id="@+id/coldWaterLastEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="метры куб."
         android:inputType="number"
+        android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
@@ -100,16 +117,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="monospace"
         android:inputType="textPersonName"
         android:text="Хол. вода (текущий месяц)"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
         android:id="@+id/coldWaterNowEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="метры куб."
         android:inputType="number"
+        android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
@@ -117,22 +137,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="monospace"
         android:inputType="textPersonName"
         android:text="Газ"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <EditText
         android:id="@+id/gasEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="60 рублей (фикс.)"
         android:inputType="number"
+        android:text="60"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
     <Button
         android:id="@+id/calcSumButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="Посчитать сумму КУ за месяц"
         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
