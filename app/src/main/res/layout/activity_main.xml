@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:baselineAligned="false"
     android:orientation="vertical"
     android:rotation="-360"
     android:rotationX="-360"
@@ -13,7 +14,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName"
         style="@android:style/Widget.AutoCompleteTextView"
-        android:layout_width="match_parent"
+        android:layout_width="418dp"
         android:layout_height="wrap_content"
         android:ellipsize="middle"
         android:ems="10"
@@ -163,7 +164,7 @@
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="match_parent"
-        android:layout_height="103dp"
+        android:layout_height="129dp"
         android:text="Итого за месяц"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 

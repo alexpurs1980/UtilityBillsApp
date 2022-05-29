@@ -5,9 +5,13 @@ import android.content.ServiceConnection
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myfirstproject.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 import java.util.concurrent.Executor
 
 class MainActivity : AppCompatActivity() {
+
+
+
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,7 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         //точка входа в приложение, отсюда можно писать приложение
 
+
         //слушаем нажатие на кнопку через метод
+
+
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         binding.calcSumButton.setOnClickListener {
             //пишем код по нажатию на кнопку - получаем содержимое окон и вычисляем их произведение
 
@@ -48,4 +59,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
 }
+
