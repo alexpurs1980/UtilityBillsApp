@@ -45,11 +45,12 @@ class MainActivity : AppCompatActivity() {
             // горячая вода = 211,67 руб.
             // холодная вода = 43,57 руб.
             // газ = 60 руб.
-            val electricySum = "Электричество ${electricyNow - electricyLast} кВт х 5,92 руб. = ${(electricyNow - electricyLast) * 5.92} руб."
-            val hotWaterSum = "\nГорячая вода ${hotWaterNow - hotWaterLast} куб.м х 211,67 руб. = ${(hotWaterNow - hotWaterLast) * 211.67} руб."
-            val coldWaterSum = "\nХолодная вода ${coldWaterNow - coldWaterLast} куб.м х 43,57 руб. = ${(coldWaterNow - coldWaterLast) * 43.57} руб."
+            val electricySum = "Электричество ${electricyNow - electricyLast} кВт х 6,17 руб. = ${(electricyNow - electricyLast) * 6.17} руб."
+            val hotWaterSum = "\nГорячая вода ${hotWaterNow - hotWaterLast} куб.м х 223,04 руб. = ${(hotWaterNow - hotWaterLast) * 223.04} руб."
+            val coldWaterSum = "\nХолодная вода ${coldWaterNow - coldWaterLast} куб.м х 45,88 руб. = ${(coldWaterNow - coldWaterLast) * 45.88} руб."
             val gasSum = "\nГаз ${gasPrice} руб."
-            val totalSum = "\nИтого за месяц ${((electricyNow - electricyLast) * 5.92) + ((hotWaterNow - hotWaterLast) * 211.67) + ((coldWaterNow - coldWaterLast) * 43.57) + 60} руб."
+            val totalSum = "\nИтого за месяц ${((electricyNow - electricyLast) * 6.17) + ((hotWaterNow - hotWaterLast) * 223.04) + ((coldWaterNow - coldWaterLast) * 45.88) + 60} руб."
+            val dateToPay = "Тарифы по состоянию на 1 июля 2022 г."
 
 
             //выводим результат (поле принимает только строку - перевод в Стринг)
