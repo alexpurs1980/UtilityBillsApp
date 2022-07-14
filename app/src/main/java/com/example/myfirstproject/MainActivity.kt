@@ -40,10 +40,10 @@ class MainActivity : AppCompatActivity() {
             val coldWaterNow = binding.coldWaterNowEditText.text.toString().toInt()
             val gasPrice = binding.gasEditText.text.toString().toInt()
 
-            //вычисление (работа с данными)
-            // кВт час = 5,92 руб.
-            // горячая вода = 211,67 руб.
-            // холодная вода = 43,57 руб.
+            //вычисление (работа с данными) - тарифы на 1 июля 2022 г.
+            // кВт час = 6,17 руб.
+            // горячая вода = 223,04 руб.
+            // холодная вода = 45,88 руб.
             // газ = 60 руб.
             val electricySum = "Электричество ${electricyNow - electricyLast} кВт х 6,17 руб. = ${(electricyNow - electricyLast) * 6.17} руб."
             val hotWaterSum = "\nГорячая вода ${hotWaterNow - hotWaterLast} куб.м х 223,04 руб. = ${(hotWaterNow - hotWaterLast) * 223.04} руб."
