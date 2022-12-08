@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.ServiceConnection
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.myfirstproject.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 import java.util.concurrent.Executor
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity() {
 
 
             //выводим результат (поле принимает только строку - перевод в Стринг)
+            binding.resultTextView.setVisibility(View.VISIBLE)
             binding.resultTextView.text = electricySum + hotWaterSum + coldWaterSum + gasSum + totalSum
 
         }
