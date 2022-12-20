@@ -128,11 +128,21 @@
             android:id="@+id/gasEditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="60"
+            android:text="68"
             android:gravity="center"
             android:textSize="16sp"
             android:layout_margin="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/editTextTextDateOfCalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/main_color"
+            android:inputType="textPersonName"
+            android:hint="Введите дату расчета" />
 
         <Button
             android:id="@+id/calcSumButton"
