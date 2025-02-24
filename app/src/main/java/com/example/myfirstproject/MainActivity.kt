@@ -1,12 +1,18 @@
 package com.example.myfirstproject
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.ServiceConnection
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.annotation.RequiresApi
 import com.example.myfirstproject.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 import java.util.concurrent.Executor
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 
 
     lateinit var binding: ActivityMainBinding
+    @SuppressLint("NewApi")
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -40,7 +48,9 @@ class MainActivity : AppCompatActivity() {
             val coldWaterLast = binding.coldWaterLastEditText.text.toString().toInt()
             val coldWaterNow = binding.coldWaterNowEditText.text.toString().toInt()
             val gasPrice = binding.gasEditText.text.toString().toInt()
-            var dateOfCalc = binding.editTextTextDateOfCalc?.text.toString()
+//            var dateOfCalc = binding.editTextTextDateOfCalc?.text.toString()
+            val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy")
+            var dateOfCalc = LocalDateTime.now().format(formatter)
 
 //            // TARIFFS 01/06/2022
 //            val kWh = 6.11
@@ -48,10 +58,16 @@ class MainActivity : AppCompatActivity() {
 //            val coldCubeMeter = 45.88
 //            val gasFixPrice = gasPrice
 
-            // TARIFFS 01/12/2022
-            val kWh = 6.43
-            val hotCubeMeter = 243.16
-            val coldCubeMeter = 50.93
+//            // TARIFFS 01/12/2022
+//            val kWh = 6.43
+//            val hotCubeMeter = 243.16
+//            val coldCubeMeter = 50.93
+//            val gasFixPrice = gasPrice
+
+            // TARIFFS 01/01/2025
+            val kWh = 6.99
+            val hotCubeMeter = 272.14
+            val coldCubeMeter = 59.8
             val gasFixPrice = gasPrice
 
 
@@ -61,8 +77,9 @@ class MainActivity : AppCompatActivity() {
             val gasSum = "\nГаз ${gasPrice} руб."
             val totalSum = "\nИтого за месяц ${((electricyNow - electricyLast) * kWh) + ((hotWaterNow - hotWaterLast) * hotCubeMeter) + ((coldWaterNow - coldWaterLast) * coldCubeMeter) + gasFixPrice} руб."
 //            val dateToPay = "\nТарифы по состоянию на 1 июля 2022 г."
-            val dateToPay = "\nТарифы по состоянию на 1 декабря 2022 г."
-            dateOfCalc = "Дата расчета: " + dateOfCalc
+//            val dateToPay = "\nТарифы по состоянию на 1 декабря 2022 г."
+            val dateToPay = "\nТарифы по состоянию на 1 января 2025 г."
+            dateOfCalc = "Дата расчета: " + dateOfCalc + " г."
 
 
             //выводим результат (поле принимает только строку - перевод в Стринг)
