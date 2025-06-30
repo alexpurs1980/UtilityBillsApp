@@ -64,10 +64,16 @@ class MainActivity : AppCompatActivity() {
 //            val coldCubeMeter = 50.93
 //            val gasFixPrice = gasPrice
 
-            // TARIFFS 01/01/2025
-            val kWh = 6.99
-            val hotCubeMeter = 272.14
-            val coldCubeMeter = 59.8
+//            // TARIFFS 01/01/2025
+//            val kWh = 6.99
+//            val hotCubeMeter = 272.14
+//            val coldCubeMeter = 59.8
+//            val gasFixPrice = gasPrice
+
+            // TARIFFS 01/07/2025
+            val kWh = 7.87
+            val hotCubeMeter = 312.5
+            val coldCubeMeter = 65.77
             val gasFixPrice = gasPrice
 
 
@@ -78,7 +84,8 @@ class MainActivity : AppCompatActivity() {
             val totalSum = "\nИтого за месяц ${((electricyNow - electricyLast) * kWh) + ((hotWaterNow - hotWaterLast) * hotCubeMeter) + ((coldWaterNow - coldWaterLast) * coldCubeMeter) + gasFixPrice} руб."
 //            val dateToPay = "\nТарифы по состоянию на 1 июля 2022 г."
 //            val dateToPay = "\nТарифы по состоянию на 1 декабря 2022 г."
-            val dateToPay = "\nТарифы по состоянию на 1 января 2025 г."
+//            val dateToPay = "\nТарифы по состоянию на 1 января 2025 г."
+            val dateToPay = "\nТарифы по состоянию на 1 июля 2025 г."
             dateOfCalc = "Дата расчета: " + dateOfCalc + " г."
 
 
