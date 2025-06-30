@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
 //            val coldCubeMeter = 59.8
 //            val gasFixPrice = gasPrice
 
-            // TARIFFS 01/07/2025
+            //  TARIFFS 01/07/2025
             val kWh = 7.87
             val hotCubeMeter = 312.5
             val coldCubeMeter = 65.77
