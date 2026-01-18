@@ -128,11 +128,11 @@
             android:id="@+id/gasEditText"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="68"
-            android:gravity="center"
-            android:textSize="16sp"
             android:layout_margin="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            android:gravity="center"
+            android:text="85"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/editTextTextDateOfCalc"
