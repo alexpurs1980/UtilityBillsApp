@@ -134,16 +134,6 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/editTextTextDateOfCalc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:textColor="@color/main_color"
-            android:inputType="textPersonName"
-            android:hint="Введите дату расчета" />
-
         <Button
             android:id="@+id/calcSumButton"
             android:layout_width="wrap_content"
