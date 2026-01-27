@@ -91,7 +91,8 @@ class MainActivity : AppCompatActivity() {
 //            val dateToPay = "\nТарифы по состоянию на 1 июля 2022 г."
 //            val dateToPay = "\nТарифы по состоянию на 1 декабря 2022 г."
 //            val dateToPay = "\nТарифы по состоянию на 1 января 2025 г."
-            val dateToPay = "\nТарифы по состоянию на 1 июля 2025 г."
+//            val dateToPay = "\nТарифы по состоянию на 1 июля 2025 г."
+            val dateToPay = "\nТарифы по состоянию на 1 января 2026 г."
             dateOfCalc = "Дата расчета: " + dateOfCalc + " г."
 
 
